@@ -1,0 +1,359 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #ffffff;
+    max-width: 1600px;
+    margin: auto;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #151515;
+    height: 60px;
+}
+.logo{
+    color: #E50914;
+    font-family: Bebas Neue;
+    font-size: 45px;
+    margin: 0px 30px;
+}
+nav a{
+    display: inline;
+}
+nav a{
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Gotham Light',sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    gap: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.rightnav{
+    margin-right: 30px;
+}
+ul img{
+    width: 20px;
+    margin: 0px 10px;
+    filter: invert();
+}
+nav a:hover{
+    color: #E50914;
+    cursor: pointer;
+}
+.rightnav img:hover{
+    cursor: pointer;
+filter: invert(18%) sepia(54%) saturate(7476%) hue-rotate(350deg) brightness(87%) contrast(109%);
+}
+
+/* ----------------------- */
+
+.hiddenbarbox button:hover{
+    color: #E50914;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hiddenbarbox{
+    display: none;
+    height: calc(100vh - 60px);
+    width: 350px;
+    max-width: 1600px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    left: 74%;
+    z-index: 21;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    animation-name: hidden;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hidden {
+    0%{
+        left: 100%;
+    }
+    25%{
+        left: 100%;
+    }
+    50%{
+        left: 74%;
+    }
+    75%{
+        left: 74%;
+    }
+    100%{
+        left: 74%;
+    }
+}
+.closebtnhiddenbox,.boxbtns{
+    padding: 20px;
+    font-size: 20px;
+    width: 250px;
+    margin: 20px auto;
+    color: white;
+    border: 2px solid #E50914;
+    background-color: #E50914;
+    border-radius: 20px;
+    transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 900;
+}
+.boxbtns img,.closebtnhiddenbox img{
+    width: 25px;
+    filter: invert();
+    margin: 0px 6px 0px 20px;
+}
+.hiddenbarbox button:hover img{
+        filter: invert(18%) sepia(54%) saturate(7476%) hue-rotate(350deg) brightness(87%) contrast(109%);
+}
+/* --=--------------CONTAINER----------- */
+button{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sectioninfo{
+    width: 20%;
+    height: calc(100vh - 60px);
+}
+.profilecontainer{
+    width: 80%;
+    height: 560;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#box1{
+    width: 90%;
+    height: 300px;
+    margin: 0px 0px 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#box2{
+    width: 90%;
+    height: 100%;
+    margin: 0px 0px 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgb(190, 190, 190);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/* -----------------------BOX 1------------- */
+
+.boxbtn{
+    width: 90%;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px auto;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: #E50914;
+    border: 2px solid #E50914;
+    border-radius: 5px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.boxbtn img,.settingbtn img{
+    width: 25px;
+    filter: invert();
+    margin: 0px 6px;
+}
+
+.boxbtn:hover{
+    background-color: white;
+    color: #E50914;
+    box-shadow: 0px 1px 15px #E50914;
+}
+.boxbtn:hover img{
+    filter: invert(18%) sepia(54%) saturate(7476%) hue-rotate(350deg) brightness(87%) contrast(109%);
+}
+.settingbtn{
+    background-color: #151515;
+    color: white;
+    border: 2px solid #151515;
+    width: 90%;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px auto;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 900;
+    border-radius: 5px;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.settingbtn:hover{
+    background-color: white;
+    color: #151515;
+    box-shadow: 0px 1px 15px #151515;
+    
+}
+.settingbtn:hover img{
+    filter: invert(0%) sepia(22%) saturate(5554%) hue-rotate(28deg) brightness(82%) contrast(84%);
+}
+/* ---------------------box 2 ------------------ */
+
+.imgbox{
+    width: 33%;
+    height: 98%;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+.imgbox img{
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: auto
+}
+.userinfo{
+    width: 60%;
+    height: 100%;
+}
+/* -------------------------userinfo--------------------------- */
+
+.username{
+    font-family: 'Gotham Light',sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    display: inline-block;
+    padding: 50px 20px 20px;
+    text-transform: lowercase;
+}
+.userinfo button{
+    padding: 10px 15px;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 900;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #151515;
+    color: #fff;
+}
+.followingcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 10px 20px;
+    font-family: 'Gotham Light',sans-serif;
+    font-weight: 900;
+}
+.aboutfollow{
+    padding: 0px 10px;
+}
+/* ----------USER BIO DATA CONTAINER-------- */
+.biodata{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+.mainname{
+    font-family: viga;
+    font-weight: 500px;
+    margin: 0px 0px 10px;
+}
+.userbiodata{
+    padding: 2px 0px;
+    font-family: 'Gotham Light',sans-serif;
+    font-weight: 900;
+}
+.userbiolink a{
+    color: #E50914;
+    text-decoration: none;
+    font-family: 'Gotham Light',sans-serif;
+    font-weight: 900;
+}
+/* ---------------------BOX 2 NAVBAR ----------------- */
+
+.boxnav{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.boxnav p{
+    font-family: 'Gotham Light',sans-serif;
+    font-weight: 900;
+    padding: 10px 20px;
+}
+.userimgcontianer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0px 13px;
+}
+.imgcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.uploadedimg{
+    width: 280px;
+    height: 280px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgb(204, 204, 204);
+
+}
+.uploadedimg img{
+    width: 280px;
+    height: 280px;
+}
+
+/* ----------------------------- */
+
+/* --------scroll bar ---------*/
+
+body::-webkit-scrollbar {
+    width: 1px
+  }
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid rgb(255, 255, 255);
+}

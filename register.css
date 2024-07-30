@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #151515;
+    max-width: 1600px;
+    height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* ------------------------------------- */
+
+.registercontainer{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    /* box-shadow: 0px 2px 10px rgb(201, 201, 201); */
+}
+#box1{
+    width: 40%;
+    height: 100%;
+    background-image: url('rolls-royce-la-rose-8000x4500-12727.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#box2{
+    width: 60%;
+    height: 100%;
+    background-color: transparent;
+}
+.head{
+    font-family: gotham;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+}
+#box2 form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+#box2 p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+    width: 70%;
+    box-shadow: 0px 1px 5px rgb(202, 202, 202);
+    border-radius: 5px;
+}
+#box2 p img{
+    width: 30px;
+    padding: 2px;
+}
+#box2 p input{
+    width: 70%;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'gotham light',sans-serif;
+    font-weight: 900;
+    font-size: 17px;
+    margin: 5px 0px;
+}
+.btnbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnbox button{
+    width: 33%;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    font-family: gotham;
+    font-weight: 900;
+    padding: 15px 20px;
+    font-size: 17px;
+    transition: 1s;
+    cursor: pointer;
+}
+.register{
+    background-color: #E50914;
+    color: #fff
+}
+.register:hover{
+    box-shadow: 0px 1px 10px #ff2b35,
+     0px 1px 20px #ff2b35; 
+}
+.login{
+    background-color: #151515;
+    color: #fff;
+}
+.login:hover{
+    box-shadow: 0px 1px 10px #151515,
+     0px 1px 20px #151515; 
+}
+.another{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.another button{
+    width: 33%;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    font-family: gotham;
+    font-weight: 900;
+    padding: 15px 20px;
+    font-size: 17px;
+    transition: 1s ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgb(158, 158, 158);
+}
+.another button img{
+    width: 25px;
+    margin: 2%;
+
+}

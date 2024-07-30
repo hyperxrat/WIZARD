@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #ffffff;
+    max-width: 1600px;
+    height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #151515;
+    height: 60px;
+}
+.logo{
+    color: #E50914;
+    font-family: Bebas Neue;
+    font-size: 45px;
+    margin: 0px 30px;
+}
+nav a{
+    display: inline;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: 'Gotham Light',sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    gap: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.rightnav{
+    margin-right: 30px;
+}
+nav ul img{
+    width: 20px;
+    margin: 0px 10px;
+    filter: invert();
+}
+nav a:hover{
+    color: #E50914;
+    cursor: pointer;
+}
+.rightnav img:hover{
+    cursor: pointer;
+filter: invert(18%) sepia(54%) saturate(7476%) hue-rotate(350deg) brightness(87%) contrast(109%);
+}
+
+/* ----------------------- */
+
+.hiddenbarbox button:hover{
+    color: #E50914;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hiddenbarbox{
+    display: none;
+    height: calc(100vh - 60px);
+    width: 350px;
+    max-width: 1600px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    position: absolute;
+    top: 60px;
+    left: 74%;
+    z-index: 21;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    animation-name: hidden;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hidden {
+    0%{
+        left: 100%;
+    }
+    25%{
+        left: 100%;
+    }
+    50%{
+        left: 74%;
+    }
+    75%{
+        left: 74%;
+    }
+    100%{
+        left: 74%;
+    }
+}
+.closebtnhiddenbox,.boxbtns{
+    padding: 20px;
+    font-size: 20px;
+    width: 250px;
+    margin: 20px auto;
+    color: white;
+    border: 2px solid #E50914;
+    background-color: #E50914;
+    border-radius: 20px;
+    transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Gotham',sans-serif;
+    font-weight: 900;
+}
+.boxbtns img,.closebtnhiddenbox img{
+    width: 25px;
+    filter: invert();
+    margin: 0px 6px 0px 20px;
+}
+.hiddenbarbox button:hover img{
+        filter: invert(18%) sepia(54%) saturate(7476%) hue-rotate(350deg) brightness(87%) contrast(109%);
+}
+
+/* -------------------CONTIANER---------------- */
+
+.messagecontainer{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+}
+#box1{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    overflow-y: scroll;
+}
+#box2{
+    width: 65%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --------------------BOX 1--------------- */
+
+.abtusernav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(196, 196, 196);
+}
+.abtuserbox{
+    width: 50%;
+}
+#abtuserbox1 img{
+    width: 65px;
+    margin: 0px 20px;
+}
+#abtuserbox2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#abtuserbox2 img{
+    width: 30px;
+    margin: 0px 10px;
+    filter: invert(7%) sepia(11%) saturate(9%) hue-rotate(331deg) brightness(91%) contrast(97%);
+}
+
+.friendcontainer{
+    width: 90%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    margin: 0px 10px;
+    flex-wrap: wrap;
+}
+.friendbox{
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff;
+    margin: 2px 0px;
+    border-radius: 5px;
+    /* box-shadow: 0px 2px 10px rgb(212, 212, 212); */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+hr{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.message{
+    font-family: 'Gotham Light',sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0px 20px;
+    text-align: left;
+}
+.name{
+    font-family: viga;
+    margin: 0px 20px;
+    text-align: left;
+}
+.chatname{
+    font-family: viga;
+    margin: 0px 20px;
+    text-align: left;
+}
+
+.usermessage{
+    display: block;
+    width: fit-content;
+    max-width: 300px;
+    font-weight: 900;
+    font-family: 'Gotham Light',sans-serif;
+    background-color: #ff3131;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    margin: 2.5px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    position: sticky;
+    right: 0%;
+}
+.userimg{
+    width: 60px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+/* ----------------BOX 2 --------------------- */
+.chatnavcontainer{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(196, 196, 196);
+    height: 60px;
+}
+.userchatnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userchatbox{
+    width: 100%;
+    height: calc(100% - 140px);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.messagebox{
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+}
+.bottom{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b0d0d;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background-image: url('thumb-1920-1045596.jpg');
+    background-size: 100%;
+}
+.callnav{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.report{
+    padding: 10px;
+    border: none;
+    background-color: #858585;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    font-family: 'Gotham',sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    border: 1px solid #858585;
+}
+.block{
+    margin: 0px 10px;
+    padding: 10px;
+    border: none;
+    background-color: #E50914;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    font-family: 'Gotham',sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    border: 1px solid #E50914;
+}
+.userimgchat{
+    width: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+.callnavimg{
+    width: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    margin: auto;
+}
+.chatinput{
+    width: 80%;
+    padding: 13px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.sendbtn{
+    margin: 0px 20px;
+    padding: 13px;
+    border: none;
+    background-color: #E50914;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    font-family: 'Gotham',sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    border: 1px solid #E50914;
+}
+
+/* --------scroll bar ---------*/
+
+body::-webkit-scrollbar {
+    width: 2px;
+  }
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0, 0, 0);
+  }
+   
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(94, 94, 94);
+    outline: 1px solid rgb(146, 146, 146);
+}
+#box1::-webkit-scrollbar {
+    width: 2px;
+  }
+   
+#box1::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+#box1::-webkit-scrollbar-thumb {
+    background-color: rgb(196, 196, 196);
+    outline: 0px solid rgb(8, 8, 8);
+}
+.userchatbox::-webkit-scrollbar {
+    width: 2px;
+  }
+   
+.userchatbox::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(255, 255, 255);
+  }
+   
+.userchatbox::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    outline: 0px solid rgb(255, 255, 255);
+}
